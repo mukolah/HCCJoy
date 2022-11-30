@@ -1,0 +1,51 @@
+{
+	"manifest_version": 3,
+	"name": "HCCJoy",
+	"description": "A small addition to your daily HCC workflow!",
+	"version": "0.1",
+	"author": "Mykola Halaida (Mike)",
+	"icons": { "16": "1616.png",
+           "48": "4848.png",
+		   "64": "6464.png",
+          "128": "128128.png" },
+	"permissions": [
+		"storage"
+	],
+	"content_scripts": [
+		{
+			"matches": ["https://crm.healthjoy.com/decision_center/*", "https://crm.healthjoy.com/v2/decision_center/*", "https://crm.healthjoy.com/provider_record/*", "https://crm.healthjoy.com/v2/provider_records/*", "https://crm.healthjoy.com/facility_record/*"],
+			"css": ["styles.css"], 
+			"js": ["jquery-3.6.0.min.js", "crmfix.js", "defpicpicker.js"]
+		},
+		{
+			"matches": ["https://cdn.healthjoy.com/*"],
+			"js": ["jquery-3.6.0.min.js", "cdmhj.js"]
+		},
+		{
+			"matches": ["https://crm.healthjoy.com/chat/*"],
+			"css": ["chatcrmcss.css"],
+			"js": ["jquery-3.6.0.min.js", "chatstyle.js"]
+		},
+		{
+			"matches": ["https://crm.healthjoy.com/decision_center/*"],
+			"js": ["jquery-3.6.0.min.js", "olddc.js", "pictureprew.js"]
+		},
+		{
+			"matches": ["https://crm.healthjoy.com/v2/decision_center/*"],
+			"js": ["jquery-3.6.0.min.js", "newdc.js"]
+		},
+		{
+			"matches": ["https://healthjoy.atlassian.net/*"],
+			"js": ["jquery-3.6.0.min.js", "atlasian.js"]
+		},
+		{
+			"matches": ["https://www.aetna.com/*", "https://www.myplanportal.com/dsepublic/*", "https://www.aetna.com/dsepublic/*"],
+			"js": ["jquery-3.6.0.min.js", "aetnafix.js"]
+		},
+		{
+			"matches": ["https://connect.werally.com/*"],
+			"css": ["uhccss.css"],
+			"js": ["jquery-3.6.0.min.js", "uhcfix.js"]
+		}
+	]
+}
