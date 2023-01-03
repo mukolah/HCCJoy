@@ -233,11 +233,20 @@ body.react-confirm-alert-body-element { overflow-y: auto !important; overflow-x:
 }
 
 /* Settings Modal Close Button */
+.settingdcver {
+  color: #b8008d;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .closesettings {
-  color: #8a8a8a;
+  color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  border: 2px solid #991DAB;
+  border-radius: 10px;
 }
 
 .closesettings:hover,
