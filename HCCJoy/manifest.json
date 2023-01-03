@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "HCCJoy",
 	"description": "Improve the experience of working in CRM and other systems based on your personal preferences.",
-	"version": "1.0",
+	"version": "1.1",
 	"author": "Mykola Halaida (Mike)",
 	"icons": { "16": "1616.png",
            "48": "4848.png",
